@@ -139,13 +139,14 @@ p {
 .section-center {
   width: 90vw;
   margin: 0 auto;
-  max-width: 50%;
+  
   margin-top: 8rem;
   
 }
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 776px) {
   .section-center {
-    width: 95vw;
+    width: 90%;
+    max-height:80% ;
   }
 }
 main {
@@ -250,14 +251,22 @@ main {
 .modal-container {
   background: var(--clr-white);
   border-radius: var(--radius);
-  width: 20vw;
   height: 100vh;
-  max-width: var(--fixed-width);
+  padding: 2rem;
   text-align: center;
   display: grid;
   place-items: center;
   position: absolute;
   left: 0;
+}
+@media screen and (max-width: 776px) {
+  .modal-overlay{
+   
+  }
+  .modal-container  {
+      
+
+  }
 }
 
 .close-modal-btn {
